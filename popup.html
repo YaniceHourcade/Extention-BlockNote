@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ynot</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <h1>Bloc-notes : Ynot</h1>
+  <div id="tabs">
+    <div id="tab-list">
+      <!-- Onglets des notes-->
+    </div>
+  </div>
+  <!-- Zone de texte de la note -->
+  <textarea id="note" placeholder="Mes super notes..."></textarea>
+  <div class="add-note">
+    <!-- Input le nom de la note -->
+    <input type="text" id="new-tab-name" placeholder="Nom de la note..." />
+    <!-- Bouton de création de note -->
+    <button id="add-tab">Nouvelle Note</button>
+  </div>
+  <!-- Bouton de supression de note-->
+  <button id="delete-note">Supprimer Note</button>
+  
+  <!-- Liens -->
+  <div class="add-lien">
+    <!-- Input du lien -->
+    <input type="text" id="new-lien-name" placeholder="Adresse du lien..." />
+    <!-- Bouton d'ajout du lien -->
+    <button id="add-lien">Nouveau Lien</button>
+  </div>
+  <!-- Afficher les liens -->
+  <button id="liens">Liens Rapides</button>
+  <div id="lien-list">
+    
+  </div>
+</body>
+</html>

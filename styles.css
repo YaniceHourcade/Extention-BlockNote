@@ -1,0 +1,176 @@
+body {
+    font-family: "Poetsen One", sans-serif;
+    width: 400px;
+    padding: 10px;
+    background-color: #FFF79A;
+}
+
+/*   Titre du bloc note */
+h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Onglets */
+#tabs {
+    margin-bottom: 10px;
+}
+
+#tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+.tab span {
+    flex-grow: 1;
+}
+
+.tab.active {
+    background-color: #A8D1D1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+/* Bouton suppression note */
+.delete-tab {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+/*   Texte du bloc note   */
+textarea {
+    width: 98%;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: #eee690;
+    font-family: "Poetsen One", sans-serif;
+    resize: none;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+textarea:focus {
+    border: 3px solid #555;
+}
+
+/* Nom de la note */
+.add-note {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 8px;
+}
+
+.add-note input {
+    flex: 0 1 70%;
+}
+.add-note button {
+    flex: 0 1 30%; 
+}
+
+/* Bouton de création de note */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #42aa48;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: "Poetsen One", sans-serif;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #44c553;
+}
+
+#delete-note {
+    background-color: rgb(216, 0, 0);
+    margin-bottom: 5px;
+}
+
+#delete-note:hover {
+    background-color: red;
+}
+
+input {
+    width: 98%;
+    font-family: "Poetsen One", sans-serif;
+    height: 30px;
+    background-color: #eee690;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input:focus {
+    border: 3px solid #555;
+}
+
+.add-lien {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 5px;
+    gap: 8px;
+}
+
+.add-lien input {
+    flex: 0 1 70%; 
+}
+.add-lien button {
+    flex: 0 1 30%; 
+}
+
+/* CSS pour les liens */
+.lien {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#lien-list {
+    display: none;
+}
+
+.lien span {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 30px;
+    text-align: center;
+    border: 3px solid #ccc;
+    margin-right: 8px;
+    padding-left: 5px;
+}
+
+.lien .delete-button {
+    background-color: rgb(216, 0, 0);
+    color: white;
+    width: 29%;
+}
+
+.lien .delete-button:hover {
+    background-color: red;
+}
