@@ -4,10 +4,11 @@
 Développer une extension Chrome en JavaScript
 
 ## Prérequis 📋
-- Chrome
+Chrome
 
 ## Installation ⬇️
 Téléchargez: git clone https://ytrack.learn.ynov.com/git/crthomas/chrome-extension
+
     Installer:
         - Allez sur chrome://extensions/
         - Activez le mode développeur
